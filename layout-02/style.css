@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.grid-item {
+    background: #f4d650;
+    height: 10rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.grid-item:nth-child(even) {
+    background: #da0303cc;
+}
