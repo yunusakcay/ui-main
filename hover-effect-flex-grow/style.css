@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    flex: 3;
+    width: 600px;
+    gap: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: black;
+    margin: auto;
+}
+
+.container div{
+    width: 80px;
+    height: 160px;
+    flex-grow: 1;
+    transition: all .3s;
+    border-radius: 5px;
+}
+
+.container div:hover{
+    flex-grow: 5;
+}
+
+.container div:nth-child(odd){
+    background-color: #f0e551;
+}
+
+.container div:nth-child(even){
+    background-color: #f05151;
+}
