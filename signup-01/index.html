@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet" type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="centering">
+        <form class="my-form">
+            <div class="signup-welcome-row">
+                <img class="signup-welcome" alt="Logo" src="assets/logo.svg">
+                <h1>Sign Up!</h1>
+            </div>
+            <div class="socials-row">
+                <a href="#" title="Use Google">
+                    <img src="assets/google.png" alt="Google">
+                    Use Google
+                </a>
+                <a href="#" title="Use Facebook">
+                    <img src="assets/facebook.png" alt="Facebook">
+                    Use Facebook
+                </a>
+            </div>
+            <div class="divider">
+                <div class="divider-line"></div>
+                OR
+                <div class="divider-line"></div>
+            </div>
+            <div class="my-form__content">
+                <div class="text-field">
+                    <label for="email">Email:</label>
+                    <input aria-label="Email" type="email" id="email" name="email" placeholder="Your Email"
+                        autocomplete="off" required>
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="text-field">
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" name="password" placeholder="Your Password" title="Minimum 6 characters at 
+                                                            least 1 Alphabet and 1 Number"
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="text-field">
+                    <label for="confirm-password">Repeat Password:</label>
+                        <input id="confirm-password" type="password" name="password" placeholder="Repeat Password"
+                            title="Minimum 6 characters at east 1 Alphabet and 1 Number"
+                            pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" required>
+                        <i class="fa-solid fa-lock"></i>
+                </div>
+                <input type="submit" class="my-form__button" value="Sign-Up">
+            </div>
+            <div class="my-form__actions">
+                <div>
+                    By registering you agree to our
+                    <a href="#" title="Reset Password">Terms</a>
+                    and <a href="#" title="Reset Password">Privacy</a>
+                </div>
+                <div class="my-form__signin">
+                    <a href="#" title="Sign In">Sign-in</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
