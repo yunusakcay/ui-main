@@ -36,6 +36,6 @@ body{
     box-shadow: 0 0 0 2px var(--effect);
     outline-color: var(--background);
     outline-offset: 15px;
-    color: var(--accent);
+    color: var(--effect);
 }
 
